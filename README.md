@@ -1,2 +1,2 @@
 # EmbeddedButton
-Simple button press implementation for Arduino with flexible handlers and debounce
+Simple button press implementation for Arduino with flexible handlers and debouncing
