@@ -7,7 +7,7 @@
 enum class ButtonPinStatus : uint8_t
 {
     Low = 0,
-    High
+    High = 1
 };
 
 class ButtonPin final
