@@ -4,7 +4,6 @@
 #include <cstdint>
 
 #include "ButtonPin.hpp"
-#include "ButtonPinStatus.hpp"
 #include "Clocks.hpp"
 #include "Timer.hpp"
 
