@@ -4,7 +4,11 @@
 #include <Arduino.h>
 #include <cstdint>
 
-#include "ButtonPinStatus.hpp"
+enum class ButtonPinStatus : uint8_t
+{
+    Low = 0,
+    High
+};
 
 class ButtonPin final
 {
