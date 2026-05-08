@@ -4,6 +4,8 @@
 #include <Arduino.h>
 #include <cstdint>
 
+using pin_t = decltype(A0);
+
 enum class ButtonPinStatus : uint8_t
 {
     Low = 0,
@@ -13,7 +15,7 @@ enum class ButtonPinStatus : uint8_t
 class ButtonPin final
 {
 public:
-    using PinType = pin_size_t;
+    using PinType = pin_t;
 
     ButtonPin(PinType pin) : _pin{ pin } {}
 
