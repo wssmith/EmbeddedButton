@@ -1,8 +1,8 @@
 #ifndef WS_TIMER_HPP
 #define WS_TIMER_HPP
 
-#include <cassert>
-#include <cstdint>
+#include <assert.h>
+#include <stdint.h>
 
 #include "Clocks.hpp"
 
