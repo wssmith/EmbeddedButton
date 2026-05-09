@@ -1,7 +1,7 @@
 #ifndef WS_BUTTON_HPP
 #define WS_BUTTON_HPP
 
-#include <cstdint>
+#include <stdint.h>
 
 #include "ButtonPin.hpp"
 #include "Clocks.hpp"
