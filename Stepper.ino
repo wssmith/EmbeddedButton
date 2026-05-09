@@ -1,6 +1,6 @@
 ﻿#include <Arduino.h>
 #include <AccelStepper.h>
-#include <cstdint>
+#include <stdint.h>
 
 #include "Button.hpp"
 
