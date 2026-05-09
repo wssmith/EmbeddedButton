@@ -2,7 +2,7 @@
 #define WS_BUTTONPIN_HPP
 
 #include <Arduino.h>
-#include <cstdint>
+#include <stdint.h>
 
 using pin_t = decltype(A0);
 
