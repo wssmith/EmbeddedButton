@@ -19,14 +19,14 @@ public:
 
     ButtonPin(PinType pin) : _pin{ pin } {}
 
-    void begin()
+    void begin(uint8_t mode = INPUT)
     {
-        pinMode(_pin, INPUT);
+        pinMode(_pin, mode);
     }
 
     ButtonPinStatus read()
     {
-        return ButtonPinStatus{ digitalRead(_pin) };
+        return static_cast<ButtonPinStatus>(digitalRead(_pin));
     }
 
 private:
