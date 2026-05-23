@@ -19,9 +19,9 @@ public:
 
     ButtonPin(PinType pin) : _pin{ pin } {}
 
-    void begin(uint8_t mode = INPUT)
+    void begin(bool pullUp = false)
     {
-        pinMode(_pin, mode);
+        pinMode(_pin, pullUp ? INPUT_PULLUP : INPUT);
     }
 
     ButtonPinStatus read()
