@@ -77,9 +77,9 @@ public:
     Button(Button&&) = default;
     Button& operator=(Button&&) = default;
 
-    void begin(uint8_t mode = INPUT)
+    void begin(bool pullUp = false)
     {
-        _pin.begin(mode);
+        _pin.begin(pullUp);
     }
 
     void setHandler(ButtonEvent btnEvent, ButtonEventHandler handler)
